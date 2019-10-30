@@ -3,3 +3,10 @@
 ################################################################################
 
 *.suo
+*.lock
+*.ide
+*.ide-wal
+*.ide-shm
+/obj
+*.user
+/.vs/Das.DataFlow/DesignTimeBuild/.dtbcache

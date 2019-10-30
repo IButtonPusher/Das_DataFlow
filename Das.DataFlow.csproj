@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Das.DataFlow</RootNamespace>
+  </PropertyGroup>
+
+    <PropertyGroup>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AssemblyName>Das.DataFlow</AssemblyName>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\RL\lib\</OutputPath>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Lenders2\**" />
+    <EmbeddedResource Remove="Lenders2\**" />
+    <None Remove="Lenders2\**" />
+  </ItemGroup>
+
+   
+  
+  <ItemGroup>
+    <Compile Remove="Buffers\PublisherBuffer.cs" />
+    <Compile Remove="Distribution\ISingleDistributor.cs" />
+    <Compile Remove="Distribution\OneToOneDistributor.cs" />
+    <Compile Remove="Distribution\SynchronousDistributor.cs" />
+    <Compile Remove="Series\CoreQueueProcessor.cs" />
+    <Compile Remove="Series\ISeriesConsolidator.cs" />
+    <Compile Remove="Series\ISeriesSubscriberProvider.cs" />
+    <Compile Remove="Series\NullSeriesProcessor.cs" />
+    <Compile Remove="Series\OneToManyQueueProcessor.cs" />
+    <Compile Remove="Series\OneToNoneQueue.cs" />
+    <Compile Remove="Series\OneToOneQueueOrigin.cs" />
+    <Compile Remove="Series\OneToOneQueueProcessor.cs" />
+    <Compile Remove="Series\OneToOneQueueRelay.cs" />
+    <Compile Remove="Series\RootProcessor.cs" />
+    <Compile Remove="WorkerContainers\ChainedSources.cs" />
+    <Compile Remove="WorkerContainers\IWorkSystemSources.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="CSharp;Managed;ClassDesigner" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Subscribers\" />
+  </ItemGroup>
+
+  <Import Project="..\DataFlow.Interfaces\DataFlow.Interfaces.projitems" Label="Shared" />
+  
+</Project>

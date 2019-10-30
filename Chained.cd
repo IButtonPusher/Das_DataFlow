@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Das.DataFlow.ChainedWorkSystem&lt;TWorkProduct&gt;" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQgAAAEAAAAAAAAAAAAAAAAgAAAABAAAAAAASAI=</HashCode>
+      <FileName>SystemManagers\ChainedWorkSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Das.DataFlow.ChainedWorkCoordinator&lt;TInput&gt;" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAIEIEAAAAAAAQCAABAAAF0ACgABEAAICDAFAI=</HashCode>
+      <FileName>Series\ChainedWorkCoordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="Das.DataFlow.TypeFinder" Collapsed="true">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAACAAAAAAAAAAAAAACAAEAAAAAAQAAAAAAgAA=</HashCode>
+      <FileName>Types\TypeFInder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.173" />
+  </Class>
+  <Class Name="Das.DataFlow.CorePublisherProvider" Collapsed="true">
+    <Position X="2" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgHCAAQA2CEAEAoAAiQAYABAEQlAAAgkBAAQIACAFAg=</HashCode>
+      <FileName>WorkerContainers\CorePublisherProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="Das.DataFlow.CorePublisherContainer" Collapsed="true">
+    <Position X="2.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AkGAAAAAACAAABgAAiAAAAAAAAAAAAAEAAAAAAAAAAo=</HashCode>
+      <FileName>WorkerContainers\CorePublisherContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="Das.DataFlow.CoreWorkerContainer" Collapsed="true">
+    <Position X="2" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AECACAAAACEAAAAAAAgAAAAQAAAAAEAAAAABAACAAAA=</HashCode>
+      <FileName>WorkerContainers\CoreWorkerContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="Das.DataFlow.Series.ChainedProcessor&lt;TInput&gt;" Collapsed="true">
+    <Position X="2" Y="5.25" Width="2.25" />
+    <Members>
+      <Field Name="_connectedFuncs" Hidden="true" />
+      <Field Name="_lastFunction" Hidden="true" />
+      <Field Name="_openFuncs" Hidden="true" />
+      <Field Name="_typeFinder" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QFCAAAQAgIAABAAEAhkASGABCAIAAAAAAAAAIAAAAAI=</HashCode>
+      <FileName>Series\ChainedProcessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
